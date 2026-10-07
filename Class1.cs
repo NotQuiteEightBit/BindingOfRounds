@@ -4,7 +4,8 @@ using UnboundLib.Cards;
 using BindingOfRounds.Cards;
 using HarmonyLib;
 using CardChoiceSpawnUniqueCardPatch.CustomCategories;
-
+using RarityLib.Utils;
+using UnityEngine;
 
 namespace BindingOfRounds
 {
@@ -32,12 +33,19 @@ namespace BindingOfRounds
             // Use this to call any harmony patch files your mod may have
             var harmony = new Harmony(ModId);
             harmony.PatchAll();
+
+            //Add rarities
+            RarityUtils.AddRarity("Epic", 0.05f, new UnityEngine.Color(1, 0, 1, 1), new UnityEngine.Color(0.588f, 0, 0.588f, 1));
+            RarityUtils.AddRarity("Legendary", 0.025f, new UnityEngine.Color(1, 1, 0, 1), new UnityEngine.Color(0.7f, 0.7f, 0, 1));
+            RarityUtils.AddRarity("???", 0.01f, new UnityEngine.Color(1, 0, 0, 1), new UnityEngine.Color(0.5f, 0, 0, 1));
+            RarityUtils.AddRarity("Unobtainable", 0, new UnityEngine.Color(1, 0, 0, 1), new UnityEngine.Color(0, 0, 0, 1));
+            RarityUtils.AddRarity("Lazy", 0.001f, new UnityEngine.Color(0, 0, 0, 1), new UnityEngine.Color(0, 0, 0, 1));
         }
         void Start()
         {
             instance = this;
             //CustomCard.BuildCard<MyCardName>();
         }
-        public static SimplyCards instance { get; private set; }
+        public static BindingOfRounds instance { get; private set; }
     }
 }
