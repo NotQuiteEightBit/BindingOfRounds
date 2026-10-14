@@ -40,6 +40,7 @@ namespace BindingOfRounds
             RarityUtils.AddRarity("???", 0.01f, new UnityEngine.Color(1, 0, 0, 1), new UnityEngine.Color(0.5f, 0, 0, 1));
             RarityUtils.AddRarity("Unobtainable", 0, new UnityEngine.Color(1, 0, 0, 1), new UnityEngine.Color(0, 0, 0, 1));
             RarityUtils.AddRarity("Lazy", 0.001f, new UnityEngine.Color(0, 0, 0, 1), new UnityEngine.Color(0, 0, 0, 1));
+            RarityUtils.AddRarity("saac", 0.0001f, new UnityEngine.Color(0, 0, 0, 1), new UnityEngine.Color(0, 0, 0, 1));
         }
         void Start()
         {
