@@ -20,6 +20,7 @@ namespace BindingOfRounds.Cards.Items.Qual3
             gun.ammo = -5;
             gun.projectileSize = 1.5f;
             gun.damage = 3f;
+            gun.projectileColor = Color.brown;
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
@@ -49,7 +50,7 @@ namespace BindingOfRounds.Cards.Items.Qual3
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Common;
+            return CardInfo.Rarity.Rare;
         }
         protected override CardInfoStat[] GetStats()
         {
