@@ -57,7 +57,7 @@ namespace BindingOfRounds.Cards
                     positive = true,
                     stat = "Effect",
                     amount = "No",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simpleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
         }
