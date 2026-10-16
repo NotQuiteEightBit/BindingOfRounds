@@ -17,6 +17,7 @@ namespace BindingOfRounds.Cards.Items.Qual3
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
             //UnityEngine.Debug.Log($"[{SimplyCards.ModInitials}][Card] {GetTitle()} has been setup.");
 
+            gun.projectileSpeed = 1.5f;
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
