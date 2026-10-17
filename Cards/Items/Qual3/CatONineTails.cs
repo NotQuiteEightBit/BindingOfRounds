@@ -58,7 +58,7 @@ namespace BindingOfRounds.Cards.Items.Qual3
                     positive = true,
                     stat = "Bullet Speed",
                     amount = "+50%",
-                    simpleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
         }

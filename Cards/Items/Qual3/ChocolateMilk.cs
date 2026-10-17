@@ -20,7 +20,7 @@ namespace BindingOfRounds.Cards.Items.Qual3
             gun.ammo = -5;
             gun.projectileSize = 1.5f;
             gun.damage = 3f;
-            gun.projectileColor = Color.brown;
+            //gun.projectileColor = Color.brown;
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
@@ -61,21 +61,21 @@ namespace BindingOfRounds.Cards.Items.Qual3
                     positive = false,
                     stat = "Ammo",
                     amount = "-5",
-                    simpleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = true,
                     stat = "Bullet Size",
                     amount = "+50%",
-                    simpleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 },
                 new CardInfoStat()
                 {
                     positive = true,
                     stat = "Damage",
                     amount = "+200%",
-                    simpleAmount = CardInfoStat.SimpleAmount.notAssigned
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
         }
