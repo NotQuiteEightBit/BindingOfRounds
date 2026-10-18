@@ -2,6 +2,7 @@
 using UnboundLib;
 using UnboundLib.Cards;
 using BindingOfRounds.Cards;
+using BindingOfRounds.Cards.Items.Qual3;
 using HarmonyLib;
 using CardChoiceSpawnUniqueCardPatch.CustomCategories;
 using RarityLib.Utils;
@@ -45,6 +46,10 @@ namespace BindingOfRounds
         void Start()
         {
             instance = this;
+
+            CustomCard.BuildCard<CatONineTails>();
+            CustomCard.BuildCard<ChocolateMilk>();
+            CustomCard.BuildCard<DeadCat>();
             //CustomCard.BuildCard<MyCardName>();
         }
         public static BindingOfRounds instance { get; private set; }
