@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using UnboundLib;
 using UnboundLib.Cards;
 using UnityEngine;
-
+using RarityLib.Utils;
 
 namespace BindingOfRounds.Cards.Items.Qual3
 {
@@ -48,7 +48,7 @@ namespace BindingOfRounds.Cards.Items.Qual3
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Legendary;
+            return RarityUtils.GetRarity("Legendary");
         }
         protected override CardInfoStat[] GetStats()
         {

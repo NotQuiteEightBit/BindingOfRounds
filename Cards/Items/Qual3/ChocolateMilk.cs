@@ -20,7 +20,7 @@ namespace BindingOfRounds.Cards.Items.Qual3
             gun.ammo = -5;
             gun.projectileSize = 1.5f;
             gun.damage = 3f;
-            //gun.projectileColor = Color.brown;
+            gun.projectileColor = new UnityEngine.Color(0.67f, 0.53f, 0.43f, 1);
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
