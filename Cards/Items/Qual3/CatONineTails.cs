@@ -18,6 +18,7 @@ namespace BindingOfRounds.Cards.Items.Qual3
             //UnityEngine.Debug.Log($"[{SimplyCards.ModInitials}][Card] {GetTitle()} has been setup.");
 
             gun.projectileSpeed = 1.5f;
+            gun.damage = 0.1f;
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
@@ -58,6 +59,13 @@ namespace BindingOfRounds.Cards.Items.Qual3
                     positive = true,
                     stat = "Bullet Speed",
                     amount = "+50%",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+                new CardInfoStat()
+                {
+                    positive = true,
+                    stat = "Damage",
+                    amount = "+10%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned
                 }
             };
